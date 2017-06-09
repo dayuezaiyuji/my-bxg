@@ -4,14 +4,19 @@ requirejs.config({
 	paths:{//给模块路径起一个别名
 		jquery:"jquery/jquery.min",
 		bootstrap:"bootstrap/js/bootstrap.min",
+		template:"artTemplate/template-web",
 		cookie:"jquery-cookie/jquery.cookie",
+		nprogress:"nprogress/nprogress",
+		index:"../js/index",
+		util:"../js/util",
+		teaList:"../js/teacherList",
 		common:"../js/common",
 		login:"../js/login"
 	},
 	shim:{
 		//兼容非标准模块
 		bootstrap:{
-			deps:["jquery"]
+			deps:["jquery"]//传递依赖参数
 		}
 	}
 });
