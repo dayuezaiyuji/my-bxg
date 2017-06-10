@@ -16,7 +16,7 @@ define(['jquery','template',"util","bootstrap"],function ($,template,util) {
 			enableTeacher()
 		}
 	});
-
+	// 讲师查看
 	function viewTeacher(){
 		$("#teacherListInfo").find(".preview").click(function(){
 			var td=$(this).closest("td");
@@ -38,7 +38,7 @@ define(['jquery','template',"util","bootstrap"],function ($,template,util) {
 			});
 		})
 	}
-
+	// 讲师启用和注销
 	function enableTeacher(){
 		$("#teacherListInfo").find(".edteacher").click(function(){
 			var that=this;
